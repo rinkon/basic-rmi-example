@@ -8,12 +8,29 @@ compile stub and skeleton using this command:
 rmic MathOperationsC
 ```
 
+Start rmiregistry on windows:
+```
+start rmiregistry
+```
+
+on Mac:
+```
+rmiregistry &
+```
+
+
 Run the server:
 
 ```
 java RMIServer
 ```
-Run the client:
+
+
+On another terminal run the client:
 ```
 java RMIClient
+```
+Stop rmiregistry on mac:
+```
+killall -9 rmiregistry
 ```
